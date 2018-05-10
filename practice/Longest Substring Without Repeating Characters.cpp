@@ -11,7 +11,7 @@
 //	//空间复杂度：O(1)
 //	int lengthOfLongestSubstring(string s)
 //	{
-//		int freq[256] = { 0 };
+//		int freq[256] = { 0 };//记录重复的字符
 //		int l=0, r=-1;//nums[l...r]为我们的滑动窗口
 //		int res = 0;
 //		while (l < s.size())
