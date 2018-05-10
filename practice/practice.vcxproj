@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Minimum Size Subarray Sum.cpp" />
     <ClCompile Include="O（n）的程序执行的时间.cpp" />
     <ClCompile Include="sortColors.cpp" />
     <ClCompile Include="TwoSum.cpp" />

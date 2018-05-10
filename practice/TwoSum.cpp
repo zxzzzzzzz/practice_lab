@@ -70,6 +70,7 @@
 ////			else
 ////				j--;
 ////		}		
+////        throw invalid_argument("The input has no solution");
 ////	}
 //
 //};
