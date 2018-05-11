@@ -147,10 +147,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Contains Duplicate II.cpp" />
+    <ClCompile Include="Contains Duplicate III.cpp" />
+    <ClCompile Include="Intersection of Two Arrays II.cpp" />
+    <ClCompile Include="Intersection of Two Arrays.cpp" />
     <ClCompile Include="Longest Substring Without Repeating Characters.cpp" />
     <ClCompile Include="Minimum Size Subarray Sum.cpp" />
+    <ClCompile Include="Number of Boomerangs.cpp" />
     <ClCompile Include="O（n）的程序执行的时间.cpp" />
     <ClCompile Include="sortColors.cpp" />
+    <ClCompile Include="Sum II.cpp" />
+    <ClCompile Include="Two Sum.cpp" />
     <ClCompile Include="TwoSum.cpp" />
     <ClCompile Include="二分查找法.cpp" />
     <ClCompile Include="moveZeroes.cpp" />
