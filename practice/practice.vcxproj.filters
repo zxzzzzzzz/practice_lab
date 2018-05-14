@@ -57,6 +57,12 @@
     <ClCompile Include="Contains Duplicate III.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Reverse Linked List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Remove Linked List Elements.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyUtil.h">
