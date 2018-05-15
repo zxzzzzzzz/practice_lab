@@ -63,6 +63,36 @@
     <ClCompile Include="Remove Linked List Elements.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Swap Nodes in Pairs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Delete Node in a Linked List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Remove Nth Node From End of List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Valid Parentheses.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Binary Tree Traversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Maximum Depth of Binary Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Invert Binary Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Path Sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Perfect Squares.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Top K Frequent Elements.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyUtil.h">
