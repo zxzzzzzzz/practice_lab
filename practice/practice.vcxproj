@@ -147,6 +147,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Assign Cookies.cpp" />
+    <ClCompile Include="Binary Tree Paths.cpp" />
     <ClCompile Include="Binary Tree Traversal.cpp" />
     <ClCompile Include="Contains Duplicate II.cpp" />
     <ClCompile Include="Contains Duplicate III.cpp" />
@@ -154,13 +156,18 @@
     <ClCompile Include="Intersection of Two Arrays II.cpp" />
     <ClCompile Include="Intersection of Two Arrays.cpp" />
     <ClCompile Include="Invert Binary Tree.cpp" />
+    <ClCompile Include="Letter Combinations of a Phone Number.cpp" />
     <ClCompile Include="Longest Substring Without Repeating Characters.cpp" />
+    <ClCompile Include="Lowest Common Ancestor of a Binary Search Tree.cpp" />
     <ClCompile Include="Maximum Depth of Binary Tree.cpp" />
     <ClCompile Include="Minimum Size Subarray Sum.cpp" />
+    <ClCompile Include="Non-overlapping Intervals.cpp" />
     <ClCompile Include="Number of Boomerangs.cpp" />
     <ClCompile Include="O（n）的程序执行的时间.cpp" />
+    <ClCompile Include="Path Sum III.cpp" />
     <ClCompile Include="Path Sum.cpp" />
     <ClCompile Include="Perfect Squares.cpp" />
+    <ClCompile Include="Permutations.cpp" />
     <ClCompile Include="Remove Linked List Elements.cpp" />
     <ClCompile Include="Remove Nth Node From End of List.cpp" />
     <ClCompile Include="Reverse Linked List.cpp" />

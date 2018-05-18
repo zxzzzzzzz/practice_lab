@@ -5,6 +5,7 @@
 //#include<cassert>
 //#include<algorithm>
 //#include<queue>
+////反转一棵二叉树
 //using namespace std;
 //
 //// Definition for a binary tree node.
@@ -97,30 +98,38 @@
 //}
 //class Solution {
 //public:
-//	//112题
-//	bool hasPathSum(TreeNode* root, int sum) {
+//	//257题
+//	vector<string> binaryTreePaths(TreeNode* root) {
+//		vector<string> res;
+//
 //		if (root == NULL)
-//			return false;
-//		if (root->left == NULL&& root->right==NULL)
-//			return root->val==sum;
+//			return res;
+//		if (root->left == NULL &&root->right == NULL)
+//		{
+//			res.push_back(to_string(root->val));
+//			return res;
+//		}
 //
-//		if (hasPathSum(root->left, sum - root->val))
-//			return true;
-//		if (hasPathSum(root->right, sum - root->val))
-//			return true;
+//		vector<string> leftS = binaryTreePaths(root->left);
+//		for (int i = 0; i < leftS.size(); i++)
+//			res.push_back(to_string(root->val) + "->" + leftS[i]);
+//		vector<string> rightS = binaryTreePaths(root->right);
+//		for (int i = 0; i < rightS.size(); i++)
+//			res.push_back(to_string(root->val) + "->" + rightS[i]);
 //
-//		return false;
+//		return res;
 //	}
 //};
 //
 //int main()
 //{
-//	int arr[] = { 5, 4, 8, 11, 0, 13, 4,7,2,0,0,0,0,0,1 };
+//	int arr[] = { 1,2,3,0,5 };
 //	int len = sizeof(arr) / sizeof(int);
 //	TreeNode* root = createTree(arr, len);
-//	int sum = 22;
-//	bool ret = Solution().hasPathSum(root,sum);
-//	cout << ret << endl;
+//
+//	vector<string> ret = Solution().binaryTreePaths(root);
+//	for (vector<string>::iterator iter = ret.begin(); iter != ret.end(); iter++)
+//		cout << *iter << "";
 //	system("pause");
 //	return 0;
 //}

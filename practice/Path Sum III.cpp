@@ -95,31 +95,44 @@
 //	delete root;
 //	//count--;
 //}
-//class Solution {
+//class solution {
 //public:
 //	//112题
-//	bool hasPathSum(TreeNode* root, int sum) {
+//	//在以root为根节点的二叉树中，寻找和为sum的路径，返回这样的路径个数
+//	int pathSum(TreeNode* root, int sum)
+//	{
 //		if (root == NULL)
-//			return false;
-//		if (root->left == NULL&& root->right==NULL)
-//			return root->val==sum;
+//			return 0;
+//		int res = findPath(root, sum);
+//		res += pathSum(root->left, sum);
+//		res += pathSum(root->right, sum);
 //
-//		if (hasPathSum(root->left, sum - root->val))
-//			return true;
-//		if (hasPathSum(root->right, sum - root->val))
-//			return true;
+//		return res;
+//	}
+//private:
+//	//在以node为根节点的二叉树中，寻找包含node的路径，和为num
+//	//返回这样的路径个数
+//	int findPath(TreeNode* node, int num)
+//	{
+//		if (node == NULL)
+//			return 0;
+//		int res = 0;
+//		if (node->val == num)
+//			res += 1;
+//		res += findPath(node->left, num - node->val);
+//		res += findPath(node->right, num - node->val);
 //
-//		return false;
+//		return res;
 //	}
 //};
 //
 //int main()
 //{
-//	int arr[] = { 5, 4, 8, 11, 0, 13, 4,7,2,0,0,0,0,0,1 };
+//	int arr[] = { 10, 5, -3, 3, 2, 0, 11,3,-2,0,1 };
 //	int len = sizeof(arr) / sizeof(int);
 //	TreeNode* root = createTree(arr, len);
-//	int sum = 22;
-//	bool ret = Solution().hasPathSum(root,sum);
+//	int sum = 8;
+//	int ret = solution().pathSum(root,sum);
 //	cout << ret << endl;
 //	system("pause");
 //	return 0;

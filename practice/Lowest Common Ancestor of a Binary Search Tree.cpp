@@ -34,14 +34,14 @@
 //	{
 //		now = que.front();
 //		que.pop();
-//		if (arr[i] != 0)
+//		if (arr[i] != -1)
 //			now->left = new TreeNode(arr[i++]);
 //		else
 //		{
 //			now->left = NULL;
 //			i++;
 //		}
-//		if (arr[i] != 0)
+//		if (arr[i] != -1)
 //			now->right = new TreeNode(arr[i++]);
 //		else
 //		{
@@ -95,31 +95,31 @@
 //	delete root;
 //	//count--;
 //}
-//class Solution {
+//class solution {
 //public:
-//	//112题
-//	bool hasPathSum(TreeNode* root, int sum) {
+//	//235题
+//	//给定一棵二分搜索树和两个节点，找最近的公共祖先
+//	TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q)
+//	{
+//		assert(p != NULL && q != NULL);
 //		if (root == NULL)
-//			return false;
-//		if (root->left == NULL&& root->right==NULL)
-//			return root->val==sum;
+//			return NULL;
+//		if (p->val < root->val && q->val < root->val)
+//			return lowestCommonAncestor(root->left, p, q);
+//		if (p->val > root->val && q->val > root->val)
+//			return lowestCommonAncestor(root->right, p, q);
 //
-//		if (hasPathSum(root->left, sum - root->val))
-//			return true;
-//		if (hasPathSum(root->right, sum - root->val))
-//			return true;
-//
-//		return false;
+//		return root;
 //	}
 //};
 //
 //int main()
 //{
-//	int arr[] = { 5, 4, 8, 11, 0, 13, 4,7,2,0,0,0,0,0,1 };
+//	int arr[] = { 6, 2, 8, 0, 4, 7, 9,-1,-1,3,5 };
 //	int len = sizeof(arr) / sizeof(int);
 //	TreeNode* root = createTree(arr, len);
-//	int sum = 22;
-//	bool ret = Solution().hasPathSum(root,sum);
+//	int sum = 8;
+//	int ret = solution().pathSum(root, sum);
 //	cout << ret << endl;
 //	system("pause");
 //	return 0;
